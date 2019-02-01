@@ -15,7 +15,7 @@ func main() {
 
 	logdir := conf.Get("LOG_DIR") + conf.Get("HOSTNAME")
 	if logdir != "" {
-		logger.Add("http", logdir+"http.log").SetTagOutput(logger.DEBUG, false)
+		logger.Add("http", logdir+"/http.log").SetTagOutput(logger.DEBUG, false)
 	}
 
 	log := logger.Get("http")
