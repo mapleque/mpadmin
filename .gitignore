@@ -1,0 +1,7 @@
+*.sh
+*.ini
+*.swp
+.env
+.idea/
+*.log
+bin/
